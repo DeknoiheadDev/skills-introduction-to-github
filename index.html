@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./CSS/style1.css" />
+    <style>
+      /* General Section Styling */
+      a {
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+      }
+
+      .about,
+      .contact {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .about:hover,
+      .contact:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .about h1,
+      .contact h2 {
+        margin-bottom: 15px;
+        font-size: 1.8em;
+        color: #333;
+      }
+
+      .about p,
+      .contact p {
+        line-height: 1.8;
+        margin-bottom: 10px;
+        font-size: 1em;
+        color: #555;
+      }
+
+      /* Sidebar Navigation */
+      .sidebar nav a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2em;
+        padding: 10px;
+        display: block;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .sidebar nav a:hover {
+        background-color: #f0f0f0;
+        color: teal;
+      }
+
+      /* Social Links */
+      .contact .social-links {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .contact .social-links a img {
+        width: 30px;
+        margin: 0 10px;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+      }
+
+      .contact .social-links a img:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+
+      #home {
+        text-align: center;
+        margin: 30px 0;
+        font-size: 2em;
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="profile-pic">
+          <img src="./IMG/index/IMG_Nick02.JPG" alt="Profile Picture" />
+        </div>
+        <h2>Sirawit Panthong</h2>
+        <p><strong>TCT-DERA</strong> 6702041510270</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="educational_record.html">Educational Record</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <!-- Header -->
+        <header class="header">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="family.html">Family</a>
+            <a href="educational_record.html">Educational Record</a>
+          </nav>
+        </header>
+
+        <!-- Home Section -->
+        <h1 id="home">Home</h1>
+
+        <!-- About Me Section -->
+        <section class="about">
+          <h1>About Me</h1>
+          <p>
+            Greetings, ladies and gentlemen. My name is Sirawit Panthong, and
+            today I would like to take this opportunity to introduce myself. I
+            am currently embarking on a new journey by pursuing a career in
+            teaching, a field I have never explored before. In the past, I
+            aspired to work as a computer engineer within the industrial sector.
+            However, the COVID-19 pandemic brought unforeseen challenges that
+            significantly impacted both
+            <a href="family.html#my-family">my family</a> and me. Following
+            these events, I developed an interest in the teaching profession, as
+            it offers greater stability and long-term prospects. 
+            <p>For further information about me, you may refer to my
+            <a href="#about">personal details</a>.</p>
+          </p>
+        </section>
+
+        <!-- Personal Details Section -->
+        <section id="about" class="about">
+          <h1>Personal details</h1>
+          <p><strong>Full Name:</strong> Sirawit Panthong</p>
+          <p><strong>Nickname:</strong> Nick</p>
+          <p><strong>Nationality:</strong> Thai</p>
+          <p><strong>Religion:</strong> Buddhism</p>
+          <p>
+            <strong>Personality:</strong> Fast learner, Responsible, Friendly,
+            Eager to learn new technologies
+          </p>
+          <p><strong>Language:</strong> Thai, English, Japanese</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+          <h2>Contact</h2>
+          <p>
+            <strong>Email (Kmutnb):</strong> s6702041510270@email.kmutnb.ac.th
+          </p>
+          <p><strong>Email (Personal):</strong> sirawitpanthong2@gmail.com</p>
+          <p><strong>Phone:</strong> 092-6651469</p>
+          <p>
+            <strong>Address:</strong> 80/20 Village No.12 Suk Prayun Road, Napa
+            Subdistrict, Muang District, Chonburi, 20000
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/sirawit.panthong">
+              <img src="./IMG/index/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/04.spnk5?igsh=MW53MjFoNWVwcXdhMg==">
+              <img src="./IMG/index/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.tiktok.com/@nickcomedownbro?_t=8sGbBlenDxw&_r=1">
+              <img src="./IMG/index/social-media.png" alt="Tiktok" />
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

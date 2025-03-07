@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Family Page</title>
+    <link rel="stylesheet" href="./CSS/style1.css" />
+    <style>
+        
+      .family-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+      }
+
+      .family-container section {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px;
+        width: 90%; 
+        max-width: 400px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .family-container section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .family-container section img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%; 
+        object-fit: cover;
+        margin-bottom: 10px;
+        border: 3px solid teal;
+      }
+
+      .family-container h1 {
+        font-size: 1.5em;
+        color: #444;
+        margin-bottom: 10px;
+      }
+
+      .family-container p {
+        color: #666;
+        font-size: 0.9em;
+      }
+
+      #my-family {
+        text-align: center;
+        margin: 30px 0;
+        font-size: 2em;
+        color: teal;
+      }
+
+      a {
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="profile-pic">
+          <img src="./IMG/index/IMG_Nick02.JPG" alt="Profile Picture" />
+        </div>
+        <h2>Sirawit Panthong</h2>
+        <p><strong>TCT-DERA</strong> 6702041510270</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="family.html" class="active">Family</a></li>
+            <li><a href="educational_record.html">Educational Record</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <!-- Header -->
+        <header class="header">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="family.html" class="active">Family</a>
+            <a href="educational_record.html">Educational Record</a>
+          </nav>
+        </header>
+
+        <h1 id="my-family">My Family</h1>
+
+        <!-- Family Section -->
+        <section class="family">
+          <div class="family-container">
+            <section class="family-number1">
+              <h1>My Father</h1>
+              <img src="./IMG/family/father.jpg" alt="Father" />
+              <h2>Kanok Pantthong</h2>
+              <p><strong>Age:</strong> 53</p>
+              <p><strong>Occupation:</strong> University Professor</p>
+              <p><strong>Workplace:</strong> Burapha University</p>
+            </section>
+
+            <section class="family-number2">
+              <h1>My Mother</h1>
+              <img src="./IMG/family/mother.jpg" alt="Mother" />
+              <h2>Benjaporn Panthong</h2>
+              <p><strong>Age:</strong> 48</p>
+              <p><strong>Occupation:</strong> Accountant</p>
+              <p><strong>Workplace:</strong> Eastern College Of Technology(E.TECH)</p>
+            </section>
+
+            <section class="family-number3">
+              <h1>My Sister</h1>
+              <img src="./IMG/family/sister.jpg" alt="Sister" />
+              <h2>Siripen Panthong</h2>
+              <p><strong>Age:</strong> 22</p>
+              <p><strong>Occupation:</strong> Freelance</p>
+              <p><strong>Workplace:</strong> Home</p>
+            </section>
+
+            <section class="family-number4">
+              <h1>Me</h1>
+              <img src="./IMG/family/me.jpg" alt="Me" />
+              <h2>Sirawit Panthong</h2>
+              <p><strong>Age:</strong> 21</p>
+              <p><strong>Occupation:</strong> Undergraduate students</p>
+              <p><strong>Workplace:</strong> King Mongkut's University of Technology North Bangkok</p>
+            </section>
+
+            <section class="family-number5">
+              <h1>My Brother</h1>
+              <img src="./IMG/family/brother.jpg" alt="Brother" />
+              <h2>Thitiwat Panthong</h2>
+              <p><strong>Age:</strong> 12</p>
+              <p><strong>Occupation:</strong> Student</p>
+              <p><strong>Workplace:</strong> Preechanusas School-Chonburi</p>
+            </section>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

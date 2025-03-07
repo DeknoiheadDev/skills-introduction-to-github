@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./CSS/style1.css" />
+    <style>
+      /* General Container */
+      a {
+        font-weight: bold;
+        color: #333;
+        text-decoration: none;
+      }
+      .education-section {
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      /* Hover Effect */
+      .education-section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .education-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+      }
+
+      .edu-logo {
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .education-info h3 {
+        margin: 0 0 10px;
+        font-size: 20px;
+        color: #333;
+      }
+
+      .education-info ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .education-info li {
+        font-size: 16px;
+        color: #555;
+      }
+
+      #education {
+        text-align: center;
+        margin: 30px 0;
+        font-size: 2em;
+        color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="profile-pic">
+          <img src="./IMG/index/IMG_Nick02.JPG" alt="Profile Picture" />
+        </div>
+        <h2>Sirawit Panthong</h2>
+        <p><strong>TCT-DERA</strong> 6702041510270</p>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="educational_record.html">Educational Record</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <!-- Header -->
+        <header class="header">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="family.html">Family</a>
+            <a href="educational_record.html">Educational Record</a>
+          </nav>
+        </header>
+
+        <!-- Education Record -->
+        <h1 id="education">EDUCATION RECORD</h1>
+
+        <!-- Preechanusas School -->
+        <section class="education-section">
+          <div class="education-item">
+            <img
+              src="./IMG/edu/PN_School.jpg"
+              alt="Preechanusas School Logo"
+              class="edu-logo"
+            />
+            <div id="pn" class="education-info">
+              <h3>
+                2006 - 2018 :
+                <a href="https://www.pn.ac.th/">Preechanusas School</a>
+              </h3>
+              <ul>
+                <li>Kindergarten</li>
+                <li>Primary School</li>
+                <li>Junior High School</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Science Based Technology Vocational College -->
+        <section class="education-section">
+          <div class="education-item">
+            <img
+              src="./IMG/edu/logo_sbtvc.png"
+              alt="Vocational College Logo"
+              class="edu-logo"
+            />
+            <div id="sbtvc" class="education-info">
+              <h3>
+                2019 - 2023 :
+                <a href="https://sbtvc.ac.th/gcms/index.php?module=data"
+                  >Science Based Technology Vocational College (Chonburi)</a
+                >
+              </h3>
+              <ul>
+                <li>High Vocational Certificate</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- King Mongkut's University -->
+        <section class="education-section">
+          <div class="education-item">
+            <img
+              src="./IMG/edu/logo_kmutnb-ok.png"
+              alt="KMUTNB Logo"
+              class="edu-logo"
+            />
+            <div id="kmutnb" class="education-info">
+              <h3>
+                2024 - Current :
+                <a href="https://www.kmutnb.ac.th/?lang=en-gb">
+                  King Mongkut's University of Technology North Bangkok</a
+                >
+              </h3>
+              <ul>
+                <li>Undergraduate Student</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
